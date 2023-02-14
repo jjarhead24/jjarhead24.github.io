@@ -91,8 +91,9 @@ footer {
     padding: 20px;
     text-align: center;
 }
-	
+
 </style>
+	
 	<title>My Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -142,5 +143,48 @@ footer {
 	<footer>
 		<p>&copy; 2023 My Portfolio</p>
 	</footer>
+
+	<script>
+		// Smooth scrolling for internal links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		    anchor.addEventListener('click', function (e) {
+		        e.preventDefault();
+
+		        document.querySelector(this.getAttribute('href')).scrollIntoView({
+		            behavior: 'smooth'
+		        });
+		    });
+		});
+
+		// Form submission
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', event => {
+			event.preventDefault();
+			const name = document.querySelector('#name').value;
+			const email = document.querySelector('#email').value;
+			const message = document.querySelector('#message').value;
+
+			// Replace with your own endpoint
+			const endpoint = 'https://example.com/api/contact';
+
+			fetch(endpoint, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ name, email, message }),
+			})
+			.then(response => response.json())
+			.then(data => {
+				alert('Thanks for your message!');
+				form.reset();
+			})
+			.catch(error => {
+				alert('An error occurred while submitting the form.');
+				console.error(error);
+			});
+		});
+	</script>
 </body>
 </html>
