@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>Jared Seymour</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -29,28 +30,33 @@
       </section>
       <section id="projects" class="projects">
         <h2>Projects</h2>
+        
+        <div id="slider-container"></div>
         <a href="projects.html" class="btn">View Projects</a>
         <p>List your projects here.</p>
       </section>
       <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form action="sendmail.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Send">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form
+        action="https://formspree.io/f/xrgvqawp"
+        method="POST"
+        >
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
         </form>
-      </section>
     </main>
+
     <footer>
-      <p>&copy; 2023 My Portfolio</p>
+      <p>&copy; 2023 Jared Seymour</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
