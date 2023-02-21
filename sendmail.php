@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = trim($_POST["message"]);
 
   // Set your email address where you want to receive emails
-  $to = "jjarhead24@gmail.com";
+  $to = "youremail@example.com";
 
   // Email subject
   $subject = "New Contact Form Submission from your portfolio website";
