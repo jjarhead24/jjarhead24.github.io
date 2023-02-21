@@ -3,7 +3,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  color: #0000;
+  color: #000000;
 }
 
 h1, h2, h3 {
@@ -11,7 +11,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #0000;
+  color: #000000;
 }
 
 ul {
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #000000;
 }
 
 /* Main styles */
@@ -67,7 +67,7 @@ section {
   background-image: url('Shoop_da_whoop_laser.jpg');
   background-size: cover;
   background-position: center;
-  color: #0000;
+  color: #000000;
   text-align: center;
 }
 
@@ -75,6 +75,6 @@ section {
   display: inline-block;
   padding: 12px 30px;
   background-color: #7E0CD6;
-  color: #0000;
+  color: #000000;
   text-decoration: none;
   border-radius:
