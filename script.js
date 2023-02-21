@@ -1,3 +1,19 @@
+const slides = [
+{
+    src: 'image1.jpg',
+    caption: 'This is the first image'
+},
+{
+    src: 'image2.jpg',
+    caption: 'This is the second image'
+},
+{
+    src: 'image3.jpg',
+    caption: 'This is the third image'
+}
+];
+
+
 function createSlider(slides) {
     const sliderContainer = document.querySelector('#slider-container');
     const slider = document.createElement('div');
