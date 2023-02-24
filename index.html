@@ -1,61 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
+<html class="text-center text-dark" style="border-top-color: var(--bs-indigo);background: var(--bs-black);">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my work and get to know me.</p>
-        <a href="#about" class="btn">Learn More</a>
-      </section>
-      <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Write a short bio about yourself here.</p>
-      </section>
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div id="slider-container"></div>
-        <a href="projects.html" class="btn">View Projects</a>
-        <p>List your projects here.</p>
-      </section>
-      <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-          <!-- modify this form HTML and place wherever you want your form -->
-          <form
-            action="https://formspree.io/f/xrgvqawp"
-            method="POST"
-          >
-            <label>
-              Your email:
-              <input type="email" name="email">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-          </form>
-      </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body class="text-center" style="background: var(--bs-black);">
+    <nav class="navbar navbar-dark navbar-expand text-black-50 text-end portfolio-navbar gradient" style="color: var(--bs-black);border-width: 0px;border-color: var(--bs-purple);border-top-style: solid;border-top-color: var(--bs-indigo);border-right-style: solid;border-bottom-style: solid;border-left-style: solid;background: linear-gradient(#7919c3, #000000);">
+        <div class="container-fluid"><a class="navbar-brand logo" href="#">Jared Seymour</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="border-style: none;border-left-style: none;border-left-color: var(--bs-info);">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="text-center page lanidng-page" style="background: var(--bs-black);">
+        <section class="text-center portfolio-block block-intro" style="background: var(--bs-black);">
+            <div class="container">
+                <div class="avatar" style="background: url(&quot;assets/img/avatars/IMG_20210803_210828_265.jpg&quot;);background-size: cover;width: 193px;height: 192px;"></div>
+                <div class="about-me" style="margin-bottom: 19px;">
+                    <p style="color: #db00ff;">Hello there! I'm Jared. I make games, I currently study Games Production at Nottingham Trent University</p>
+                </div>
+            </div>
+            <h1 style="border-radius: 2px;padding-bottom: 0px;margin-bottom: 28px;border-top: 35px groove var(--bs-purple);color: #db00ff;">Quick Links</h1>
+            <p><a href="About%20Me.html" style="color: #db00ff;">About Me</a><br><a href="https://jjarhead24.itch.io" style="color: rgb(219,0,255);">Itch.Io</a><br><a href="https://www.artstation.com/jjarhead24" style="color: rgb(219,1,255);">Art Station</a><br><a href="https://www.instagram.com/jjarhead24/" style="color: rgb(235,0,255);">Instagram</a><br><a href="https://www.linkedin.com/in/jared-seymour-161a97208/" style="color: rgb(219,1,255);">Linked In<br><br></a><br></p>
+        </section>
+        <section class="portfolio-block photography">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="SpaceCats.html"><img class="img-fluid image" data-aos="fade-up" src="assets/img/pics/guhl5Z.png"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="MajorTom.html"><img class="img-fluid image" data-aos="fade-up" src="assets/img/pics/1tvWjA.png"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" data-aos="fade-up" src="tech/image4.jpg"></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content"></div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2 data-aos="fade-up" style="color: #db00ff;">Special Skills</h2>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card special-skill-item border-0" style="background: #db00ff;">
+                            <div class="card-header bg-transparent border-0" style="color: var(--bs-black);background: var(--bs-indigo);"></div>
+                            <div class="card-body" style="background: #db00ff;">
+                                <h3 class="card-title">Game Development</h3>
+                                <p class="card-text" style="color: rgb(0,0,0);">I create fun and unique mechanics and gameplay systems for my games that enchance the games for the players</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0" style="background: #db00ff;">
+                            <div class="card-header bg-transparent border-0" style="background: #db00ff;"></div>
+                            <div class="card-body" style="background: #db00ff;">
+                                <h3 class="card-title">3D Modeling</h3>
+                                <p class="card-text" style="color: rgb(0,0,0);">I model all my assets using Maya and plan on learning to use Blender</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0" style="border-left-color: #db00ff;background: #db00ff;">
+                            <div class="card-header bg-transparent border-0" style="background: #db00ff;"></div>
+                            <div class="card-body" style="background: #db00ff;">
+                                <h3 class="card-title">Programming</h3>
+                                <p class="card-text" style="color: rgb(0,0,0);">I can program in many languages, i tend to use VB.net, python, C# and C++</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p>&copy; 2023 My Portfolio</p>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="#" style="color: #db00ff;">About me</a><a href="#" style="color: #db00ff;">Contact me</a><a href="#" style="color: #db00ff;">Projects</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/profile.php?id=100004446347752" style="background: #db00ff;"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/jjarhead24/" style="background: #db00ff;"><i class="icon ion-social-instagram-outline"></i></a><a href="https://twitter.com/jjarhead24" style="color: var(--bs-white);background: #db00ff;"><i class="icon ion-social-twitter"></i></a></div>
+        </div>
     </footer>
-  </body>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
 </html>
